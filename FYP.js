@@ -1,11 +1,11 @@
-function filterSelection(category) {
+function filterSelection(category, clickedBtn) {
             const items = document.getElementsByClassName("filter-item");
             const buttons = document.getElementsByClassName("filter-btn");
 
             Array.from(buttons).forEach(btn => {
                 btn.classList.remove("active");
-            });
-            event.currentTarget.classList.add("active");
+	});
+	if (clickedBtn && clickedBtn.classList) clickedBtn.classList.add("active");
 
             if (category == "all") category = "";
             
@@ -50,7 +50,8 @@ if (contactForm) {
         });
     });
 }
-        // Initialize view
-        filterSelection("all");
+// Initialize view
+const initialBtn = document.querySelector('.filter-container .filter-btn.active') || document.querySelector('.filter-container .filter-btn');
+filterSelection("all", initialBtn);
 
    
