@@ -48,25 +48,22 @@
         .logo span { color: var(--text-muted); }
 
         nav a {
+           background: transparent;
+            border: 1px solid var(--text-muted);
             color: var(--text-muted);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 500;
-            transition: color 0.3s;
-             font-family: "Rubik", sans-serif;
+text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 50px;
+            margin: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  border: var(--text-muted) 1px solid ;
-            padding: 8px 8px;
-            border-radius: 8px;
-             font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  
             
         }
-        nav a:hover { color: var(--text-main); 
-        border: var(--text-main) 1px solid;}
+        nav a:hover {  border-color: var(--text-main);
+            color: var(--bg-color);
+            background-color: var(--text-main);}
         
  
         /* --- HERO SECTION (UPDATED FOR PHOTO) --- */
@@ -270,10 +267,7 @@ a.filter-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+           
 }
 
         /* --- PORTFOLIO GRID --- */
